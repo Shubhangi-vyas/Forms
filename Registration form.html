@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        input[type=text], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=number], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=email], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=date], select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=radio], select {
+            box-sizing: border-box;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid black;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:lightblue ;
+            font-style: oblique;
+            font-size: larger;
+        }
+        input[type=text]:focus,
+        input[type=number]:focus,
+        input[type=email]:focus {
+                background-color: thistle;
+            }
+
+        .a{
+            width: auto;
+            margin-left: 500px ;
+            margin-top: 40px;
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1> Registration Form </h1>
+    <form>
+    <div>
+       <h3>Your Name</h3> 
+        <input type="text" placeholder="Your Name"  id="Your"name=""> 
+    </div>
+    <div>
+      <h3>Gender</h3>
+    </div>
+    <div>
+        Male <input type="radio" name="Gender"> 
+        Female <input type="radio"name="Gender">
+        Others <input type="radio"name="Gender">
+    </div>
+    <div>
+       <h3> State </h3>
+        <select name="select">
+        <option value="Rajasthan">Rajasthan</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Punjab">Punjab</option>
+        <option value="Maharastra">Maharastra</option>
+        <option value="Kolkata">Kolkata</option>
+    </select>
+    </div>
+    <div>
+        <h3> City </h3>
+         <input type="text" placeholder="Which city you belong to" required>
+     </div>
+    <div>
+      <h3> Date of Birth </h3>
+        <input type="date" placeholder="DD/MM/YY" required>
+    </div>
+    <div>
+      <h3>  Phone Number</h3>
+        <input type="number" placeholder="9473******" required>
+    </div>
+    <div>
+       <h3> Alternate Phone Number</h3>
+        <input type="number" placeholder="9588******" required>
+    </div>
+    <div>
+       <h3> E-Mail</h3>
+        <input type="email" placeholder="abc@gmail.com" required>
+    </div>
+    <div>
+        <h3> Father's Name</h3>
+        <input type="text" placeholder="Your Father's Name" required>
+    </div>
+    <div>
+        <h3>Mother's Name</h3>
+        <input type="text" placeholder="Your Mother's Name" required> 
+    </div>
+    <div>
+      <h3>Permanent Address</h3>
+        <input type="text" placeholder="Your Pernament Address" required>
+    </div>
+    <div>
+        <h3>Correspondence Address</h3>
+          <input type="text" placeholder="Your Correspondence Address" required>
+      </div>
+      <div>
+        <h3>Photograph (size 20kb-50kb)</h3>
+        <input type="file" placeholder="file" required>
+      </div>
+    <div class="a">
+        <input type="submit" value="SUBMIT">
+        <input type="Reset" value="RESET"></input>
+    </div>
+</form>
+
+       
+
+</body>
+</html>
